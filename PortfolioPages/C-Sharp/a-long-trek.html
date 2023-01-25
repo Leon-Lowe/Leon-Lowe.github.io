@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leon Lowe</title>
+
+        <meta name="viewport", content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../../default.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Leon!</h1>
+                <div class="nav-wrapper">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../about.html">About</a>
+                    <a href="../../portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="s2">
+            <section class="s1">
+                <div class="main-container">
+                    <div class="portfolio-page-wrapper">
+                        <div class="portfolio-description">
+                            <h2>A Long Trek</h2>
+                            <p>A story-focussed puzzle platformer</p>
+                            <h3>Features</h3>
+                            <ul>
+                                <li>Momentum Movement - Moving feels fluid. Gain more momentum the more you grapple</li>
+                                <li>Grappling - Can't jump there? Find a grapple point and swing your way onto that ledge</li>
+                                <li>Fun Puzzles - I suppose this one is subjective - some of the later levels rock!</li>
+                                <li>Mysterious Setting - Is it a Temple? Or is it something else?</li>
+                            </ul>
+                            <h3>Our Team</h3>
+                            <ul>
+                                <li>Leon Lowe (Me) - Programming and Sound Effects</li>
+                                <li>John Burton (<a href="https://twitter.com/bathropson">@bathropson</a>) - Art and Animations </li>
+                            </ul>
+                            <h3>What I used in this project</h3>
+                            <ul>
+                                <li>Interfaces</li>
+                                <li>Inheritance</li>
+                                <li>Namespaces</li>
+                                <li>JSON</li>
+                                <li>2D Physics</li>
+                                <li>2D Mathematics</li>
+                                <li>Scriptable Objects</li>
+                                <li>Optimization</li>
+                                <li>Unity 2D Lights</li>
+                                <li>Unity Post Processing</li>
+                            </ul>
+                            <h3>My experience making this project</h3>
+                            <p>
+                                During my time programming this game, I was brought out of my comfort zone 
+                                quite a bit and pushed to learn new things. The end goal was to have our main 
+                                story mode that focused on puzzle solving, and a time trial mode that focused 
+                                on the movement.
+                            </p>
+                            <p>
+                                For the puzzle creation, I had to make a nice modular way of creating different 
+                                puzzles. As most of the puzzles involved pressing buttons or pulling levers, I 
+                                could make the button and lever classes extend from an interface. This interface 
+                                would then interact with another interface that handled what other objects would 
+                                do in response to this. For example, a button would extend IPuzzleInteractable 
+                                which would then call the function Interact. This function would then tell all 
+                                the IPuzzleComponent interfaces that they can call their function, Activate. I 
+                                would then create something like a moving platform which would extend 
+                                IPuzzleComponent and would start moving when Activate is called. This system 
+                                meant that whoever was designing a level could put a button into the scene and 
+                                then hook up the correct things that are affected by that button.
+                            </p>
+                            <p>
+                                As for the movement, I usually set the players' velocity through code. However, 
+                                that wouldn't work for the movement as we needed the speed to increase as you 
+                                grappled. To do this, I had to add a force to the player whenever they were moving 
+                                and grappling, and then cap the velocity at a certain point so the player couldn't 
+                                move too fast.
+                            </p>
+                            <p>
+                                One interesting thing I did have to learn how to do was the time trial logic. 
+                                The player would be up against their previous time, and that also meant adding 
+                                a ghost to show the previous run they did. I then had to store all of this in a file 
+                                and then the player could share their ghost with their friends. All their friend 
+                                had to do was delete their ghost file and add the new one. Sadly, we never released 
+                                this as an update for the demo but I am planning on making a time trial-focused 
+                                platformer soon to show off this feature.
+                            </p>
+
+                            <div class="button-itch">
+                                <a id="itch-link" href="https://dyludiumdigital.itch.io/a-long-trek">Try on Itch.io</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="portfolio-image" src="../../Images/Portfolio/LongTrek/LongTrekScreenshot_1.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/LongTrek/LongTrekScreenshot_2.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/LongTrek/LongTrekScreenshot_3.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/LongTrek/LongTrekScreenshot_4.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/LongTrek/LongTrekScreenshot_5.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="main-container">
+            <div class="footer-wrapper">
+                <div class="contact-wrapper">
+                    <h2>Contact Me</h2>
+                    <p>Email - leonlowe0@outlook.com</p>
+                    <p>WhatsApp - +44 7395 822483</p>
+                </div>
+                <div class="contact-wrapper">
+                    <h2>Socials</h2>
+                    <div class="socials-wrapper">
+                        <a href="https://github.com/Leon-Lowe"><img id="social-image" src="../../Images/Github_logo.png"></a>
+                        <a href="https://www.linkedin.com/in/leonlowe"><img id="social-image" src="../../Images/LinkedIn_logo.png"></a>
+                        <a href="https://www.youtube.com/@lotutorials"><img id="social-image" src="../../Images/Youtube_logo.png"></a>
+                        <a href="https://twitter.com/Its_Just_Lowe"><img id="social-image" src="../../Images/Twitter_logo.png"></a>
+                        <a href="https://www.facebook.com/LeonLoweFreelancing"><img id="social-image" src="../../Images/Facebook_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

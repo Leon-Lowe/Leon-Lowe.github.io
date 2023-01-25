@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leon Lowe</title>
+
+        <meta name="viewport", content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../../default.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Leon!</h1>
+                <div class="nav-wrapper">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../about.html">About</a>
+                    <a href="../../portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="s2">
+            <section class="s1">
+                <div class="main-container">
+                    <div class="portfolio-page-wrapper">
+                        <div class="portfolio-description">
+                            <h2>Agricultural Espionage</h2>
+                            <p>A top down stealth tycoon game</p>
+                            <h3>Features</h3>
+                            <ul>
+                                <li>Snappy Movement - The best type of movement for precisely dodging those 
+                                    vision cones
+                                </li>
+                                <li>Dynamic World - Use your jerry can and lighter to burn down other farms 
+                                    and brng more customers to your farm
+                                </li>
+                                <li>Day and Night Cycle - Grow crops in the day, commit arson at night</li>
+                            </ul>
+                            <h3>Our Team</h3>
+                            <ul>
+                                <li>Leon Lowe (Me) - Programming and Sound Effects</li>
+                                <li>John Burton (<a href="https://twitter.com/bathropson">@bathropson</a>) - Art and Animations </li>
+                                <li>Harry Simpson (<a href="https://twitter.com/SimpsonGame">@SimpsonGame</a>) - Music </li>
+                            </ul>
+                            <h3>What I used in this project</h3>
+                            <ul>
+                                <li>Inheritance</li>
+                                <li>2D Mathematics</li>
+                                <li>2D Physics</li>
+                                <li>Enemy AI</li>
+                                <li>Scriptable Objects</li>
+                            </ul>
+                            <h3>My experience making this project</h3>
+                            <p>
+                                This was the first publicly available game that I created. It was made for a game jam in under 72 hours. 
+                                As it was my first complete game, there was a lot I had to learn so it could be in a playable state. First 
+                                I had to learn about scene management so that the player could switch between the menu and the different 
+                                levels. I also had to learn about optimization so that people could play it without lag, as well as learn 
+                                about how to actually package up the game so it could be distributed.
+                            </p>
+                            <p>
+                                When it came to adding crops for the game, I had to learn about Scriptable Objects. To do this, I created 
+                                a Crop object which you could then create in the assets folder. You could then give each crop object a 
+                                different name, growth time, and sprites for each growth stage. This would then allow me to put any crop 
+                                into a crop plot and use the same code for growing and harvesting the crop.
+                            </p>
+                            <p>
+                                I also had to learn about basic enemy AI. This is because we wanted the player to have to sneak around 
+                                other farms and burn them down. So I made a couple of states for the enemy AI; patrolling and chasing. If 
+                                the enemy AI state was patrolling, it would walk along a set path so that the player could anticipate their 
+                                movement. If they were chasing then they would move straight towards the player. In order to switch between 
+                                the two, I added a vision cone that would detect the player. If the player was inside this vision cone then 
+                                the AI would begin chasing the player. If the AI had not seen the player in a set amount of seconds, they 
+                                would go back to patrolling.
+                            </p>
+
+                            <div class="button-itch">
+                                <a id="itch-link" href="https://dyludiumdigital.itch.io/agricultural-espionage">Try on Itch.io</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="portfolio-image" src="../../Images/Portfolio/AE/AEScreenshot_1.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/AE/AEScreenshot_2.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/AE/AEScreenshot_3.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/AE/AEScreenshot_4.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/AE/AEScreenshot_5.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="main-container">
+            <div class="footer-wrapper">
+                <div class="contact-wrapper">
+                    <h2>Contact Me</h2>
+                    <p>Email - leonlowe0@outlook.com</p>
+                    <p>WhatsApp - +44 7395 822483</p>
+                </div>
+                <div class="contact-wrapper">
+                    <h2>Socials</h2>
+                    <div class="socials-wrapper">
+                        <a href="https://github.com/Leon-Lowe"><img id="social-image" src="../../Images/Github_logo.png"></a>
+                        <a href="https://www.linkedin.com/in/leonlowe"><img id="social-image" src="../../Images/LinkedIn_logo.png"></a>
+                        <a href="https://www.youtube.com/@lotutorials"><img id="social-image" src="../../Images/Youtube_logo.png"></a>
+                        <a href="https://twitter.com/Its_Just_Lowe"><img id="social-image" src="../../Images/Twitter_logo.png"></a>
+                        <a href="https://www.facebook.com/LeonLoweFreelancing"><img id="social-image" src="../../Images/Facebook_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leon Lowe</title>
+
+        <meta name="viewport", content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../../default.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Leon!</h1>
+                <div class="nav-wrapper">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../about.html">About</a>
+                    <a href="../../portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="s2">
+            <section class="s1">
+                <div class="main-container">
+                    <div class="portfolio-page-wrapper">
+                        <div class="portfolio-description">
+                            <h2>Snake</h2>
+                            <p>A simple snake clone</p>
+                            <h3>Our Team</h3>
+                            <ul>
+                                <li>Leon Lowe (Me) - Programming</li>
+                            </ul>
+                            <h3>What I used in this project</h3>
+                            <ul>
+                                <li>Python basics</li>
+                                <li>2D Mathematics</li>
+                                <li>2D Collisions</li>
+                                <li>Classes</li>
+                            </ul>
+                            <h3>My experience making this project</h3>
+                            <p>
+                                As this was my first project made in python, I had to figure out how to do a lot of things such as:
+                            </p>
+                            <ul>
+                                <li>How do I create functions?</li>
+                                <li>How do I create variables?</li>
+                                <li>How do I create Classes?</li>
+                                <li>How do I make a game window?</li>
+                                <li>How do I make the game window stay open?</li>
+                                <li>How do I get player input?</li>
+                            </ul>
+                            <p>
+                                Thankfully, there are quite a lot of resources that could help me answer these questions and the pygame library 
+                                helped with making a game window as well as getting input from the player.
+                            </p>
+                            <p>
+                                First of all, I had a class called 'Game' which handled all of the main gameplay loop such as drawing, keeping the window 
+                                open, and processing collisions. When the program is first opened, it will create a new 'Game' object, initialise it, and then 
+                                call 'game.run'. The game class would then check to see if the game is currently running and, if it is, it would draw the current 
+                                frame and collect any input from the player. Based on this input, it could then call 'Snake.move' which would move the snake. If 
+                                the game class detects that the snake is colliding with the apple, it would tell the snake object to increase its length and 
+                                tell the apple object to move to a new location.
+                            </p>
+                            <p>
+                                For my first project in python, I think I did a pretty good job, especially by adding a pause function and a game over screen.
+                            </p>
+
+                            <div class="button-github">
+                                <a id="github-link" href="https://github.com/Leon-Lowe/Snake-Py">View source code</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="portfolio-image" src="../../Images/Portfolio/Snake/snake.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="main-container">
+            <div class="footer-wrapper">
+                <div class="contact-wrapper">
+                    <h2>Contact Me</h2>
+                    <p>Email - leonlowe0@outlook.com</p>
+                    <p>WhatsApp - +44 7395 822483</p>
+                </div>
+                <div class="contact-wrapper">
+                    <h2>Socials</h2>
+                    <div class="socials-wrapper">
+                        <a href="https://github.com/Leon-Lowe"><img id="social-image" src="../../Images/Github_logo.png"></a>
+                        <a href="https://www.linkedin.com/in/leonlowe"><img id="social-image" src="../../Images/LinkedIn_logo.png"></a>
+                        <a href="https://www.youtube.com/@lotutorials"><img id="social-image" src="../../Images/Youtube_logo.png"></a>
+                        <a href="https://twitter.com/Its_Just_Lowe"><img id="social-image" src="../../Images/Twitter_logo.png"></a>
+                        <a href="https://www.facebook.com/LeonLoweFreelancing"><img id="social-image" src="../../Images/Facebook_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

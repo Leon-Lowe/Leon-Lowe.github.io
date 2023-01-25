@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leon Lowe</title>
+
+        <meta name="viewport", content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../../default.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Leon!</h1>
+                <div class="nav-wrapper">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../about.html">About</a>
+                    <a href="../../portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="s2">
+            <section class="s1">
+                <div class="main-container">
+                    <div class="portfolio-page-wrapper">
+                        <div class="portfolio-description">
+                            <h2>Asteroid Dodger</h2>
+                            <p>Survive the endless barage of asteroids for as long as you can</p>
+                            <h3>Our Team</h3>
+                            <ul>
+                                <li>Leon Lowe (Me) - Programming</li>
+                            </ul>
+                            <h3>What I used in this project</h3>
+                            <ul>
+                                <li>Classes</li>
+                                <li>Asset Loading</li>
+                                <li>2D Mathematics</li>
+                                <li>2D Collisions</li>
+                                <li>Scene Switching</li>
+                            </ul>
+                            <h3>My experience making this project</h3>
+                            <p>
+                                For this python project, I mainly wanted to focus on separating my code into different files as well as creating components that could be 
+                                added to objects and creating an easy way to load assets into the game.
+                            </p>
+                            <p>
+                                To separate my code into different files, all I had to do was make sure I was importing the correct files into other files. For 
+                                example, the 'main.py' file only needed to import the 'game.py' file. However, 'game.py' had to import:
+                            </p>
+                            <ul>
+                                <li>resources.py</li>
+                                <li>player.py</li>
+                                <li>enemy_cluster.py</li>
+                                <li>mathematics.py</li>
+                                <li>enemy.py</li>
+                            </ul>
+                            <p>
+                                When it came to creating components that could be added, I had two in mind. The first was a 'transform' component which contained 
+                                a vector2 for position and another vector2 for scale. It also had a function for moving the object it's attached to which just 
+                                adds a given vector2 to its current position. The second component I wanted to create was a box collider. This needed a vector2 
+                                for its position and an integer for its size in pixels. It then had a function for checking a collision between this box collider's 
+                                position against another box collider's position.
+                            </p>
+                            <p>
+                                The last thing I wanted to add was an easy way to put assets into the game. I did this by creating a class called resources that was 
+                                created at the start of the game class. You would then be able to get any asset you wanted from it by calling something like 
+                                'resources.PLAYER_SPRITE_PATH'. This meant that if you wanted to adjust a resource in your project, you wouldn't need to go through 
+                                the entire project. You could just go to the asset file and change the sprite path.
+                            </p>
+
+                            <div class="button-itch">
+                                <a id="itch-link" href="https://lo-studios.itch.io/asteroid-dodger">Try on Itch.io</a>
+                            </div>
+                            <div class="button-github">
+                                <a id="github-link" href="https://github.com/Leon-Lowe/BlockDodger-py">View source code</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="portfolio-image" src="../../Images/Portfolio/AsteroidDodger/ad.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="main-container">
+            <div class="footer-wrapper">
+                <div class="contact-wrapper">
+                    <h2>Contact Me</h2>
+                    <p>Email - leonlowe0@outlook.com</p>
+                    <p>WhatsApp - +44 7395 822483</p>
+                </div>
+                <div class="contact-wrapper">
+                    <h2>Socials</h2>
+                    <div class="socials-wrapper">
+                        <a href="https://github.com/Leon-Lowe"><img id="social-image" src="../../Images/Github_logo.png"></a>
+                        <a href="https://www.linkedin.com/in/leonlowe"><img id="social-image" src="../../Images/LinkedIn_logo.png"></a>
+                        <a href="https://www.youtube.com/@lotutorials"><img id="social-image" src="../../Images/Youtube_logo.png"></a>
+                        <a href="https://twitter.com/Its_Just_Lowe"><img id="social-image" src="../../Images/Twitter_logo.png"></a>
+                        <a href="https://www.facebook.com/LeonLoweFreelancing"><img id="social-image" src="../../Images/Facebook_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

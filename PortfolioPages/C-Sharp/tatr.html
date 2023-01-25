@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leon Lowe</title>
+
+        <meta name="viewport", content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../../default.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Leon!</h1>
+                <div class="nav-wrapper">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../about.html">About</a>
+                    <a href="../../portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="s2">
+            <section class="s1">
+                <div class="main-container">
+                    <div class="portfolio-page-wrapper">
+                        <div class="portfolio-description">
+                            <h2>The Akhenaken Temple Raid</h2>
+                            <p>An eploaration puzzle platformer</p>
+                            <h3>Features</h3>
+                            <ul>
+                                <li>Physics Based Movement - Moving feels fluid</li>
+                                <li>Dimension Switching - Use your runes to switch dimensions and uncover new things</li>
+                                <li>Fun Puzzles - Use your runes to see things you couldn't ordinarily see!</li>
+                            </ul>
+                            <h3>Our Team</h3>
+                            <ul>
+                                <li>Leon Lowe (Me) - Programming and Sound Effects</li>
+                                <li>John Burton (<a href="https://twitter.com/bathropson">@bathropson</a>) - Art and Animations </li>
+                            </ul>
+                            <h3>What I used in this project</h3>
+                            <ul>
+                                <li>Inheritance</li>
+                                <li>2D Mathematics</li>
+                                <li>2D Physics</li>
+                                <li>Scriptable Objects</li>
+                                <li>Optimization</li>
+                                <li>Unity 2D Lights</li>
+                                <li>Unity Post Processing</li>
+                            </ul>
+                            <h3>My experience making this project</h3>
+                            <p>
+                                For this game jam project, we decided to push ourselves in each field we were working in. For me, this meant adding 
+                                different dimensions you can switch between to solve puzzles and get past obstacles. I also had to learn how to use 
+                                the post-processing package in unity as well as lights.
+                            </p>
+                            <p>
+                                For the dimension switching, it was rather easy. I just had a script set up that would get all the objects from each 
+                                dimension (normal, green, red, and blue) and then when the player switched the rune they were holding, it would go 
+                                through and deactivate all dimension objects that we're not relevant to that dimension. To figure out what objects 
+                                were part of what dimension, they had a simple script attached to them called DimensionObject that had an enum where 
+                                you could choose the dimension for that object. This would then automatically update what sprite and emissive map the 
+                                current object was using. I then had to make sure the camera switched the post-processing profile it was using so that 
+                                each dimension would look unique.
+                            </p>
+                            <p>
+                                As for the post-processing and lights, it was fairly straightforward to set up and implement. The tricky thing was 
+                                optimizing the lights. To do this, I made a script that would only render the lights that were visible to the camera. 
+                                Again, fairly easy to set up as the script would get all the lights in the scene on startup and then activate or 
+                                deactivate the lights based on a distance calculated at startup based on your screen height and width.
+                            </p>
+
+                            <div class="button-itch">
+                                <a id="itch-link" href="https://dyludiumdigital.itch.io/pharaoh-temple-raid">Try on Itch.io</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="portfolio-image" src="../../Images/Portfolio/TATR/TATRScreenshot_1.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/TATR/TATRScreenshot_2.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/TATR/TATRScreenshot_3.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/TATR/TATRScreenshot_4.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="main-container">
+            <div class="footer-wrapper">
+                <div class="contact-wrapper">
+                    <h2>Contact Me</h2>
+                    <p>Email - leonlowe0@outlook.com</p>
+                    <p>WhatsApp - +44 7395 822483</p>
+                </div>
+                <div class="contact-wrapper">
+                    <h2>Socials</h2>
+                    <div class="socials-wrapper">
+                        <a href="https://github.com/Leon-Lowe"><img id="social-image" src="../../Images/Github_logo.png"></a>
+                        <a href="https://www.linkedin.com/in/leonlowe"><img id="social-image" src="../../Images/LinkedIn_logo.png"></a>
+                        <a href="https://www.youtube.com/@lotutorials"><img id="social-image" src="../../Images/Youtube_logo.png"></a>
+                        <a href="https://twitter.com/Its_Just_Lowe"><img id="social-image" src="../../Images/Twitter_logo.png"></a>
+                        <a href="https://www.facebook.com/LeonLoweFreelancing"><img id="social-image" src="../../Images/Facebook_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

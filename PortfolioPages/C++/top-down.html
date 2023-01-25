@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leon Lowe</title>
+
+        <meta name="viewport", content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../../default.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Leon!</h1>
+                <div class="nav-wrapper">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../about.html">About</a>
+                    <a href="../../portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="s2">
+            <section class="s1">
+                <div class="main-container">
+                    <div class="portfolio-page-wrapper">
+                        <div class="portfolio-description">
+                            <h2>Top Down Beat 'em' Up</h2>
+                            <p>A top-down exploration/beat 'em' up game</p>
+                            <h3>Our Team</h3>
+                            <ul>
+                                <li>Leon Lowe (Me) - Programming</li>
+                            </ul>
+                            <h3>What I used in this project</h3>
+                            <ul>
+                                <li>Classes</li>
+                                <li>Inheritance</li>
+                                <li>Pointers</li>
+                                <li>2D Mathematics</li>
+                                <li>2D Physics</li>
+                                <li>2D Collisions</li>
+                                <li>Raylib</li>
+                            </ul>
+                            <h3>My experience making this project</h3>
+                            <p>
+                                The first major thing that I learned was how to separate my code into different files using header files and cpp files. This isn't 
+                                something that needs to be done, but it definitely helps to maintain clean code. This means that I was able to create separate 
+                                classes for the player, the enemies, and the props. Each of these then contained its own variables and functions. The most notable 
+                                of these was the 'Tick()' function in the player and enemy class which held the code for everything they needed to do on each frame. 
+                                For example, the player needed to get input, move, be drawn, and be animated every single frame.
+                            </p>
+                            <p>
+                                The second major thing that I learned was using class inheritance. This meant that I could make a 'BaseCharacter' class which would 
+                                contain any duplicate variables or functions that the player and enemy previously held. I also learned about virtual functions which 
+                                would then allow me to override said functions in the child classes.
+                            </p>
+                            <p>
+                                Other than those two major things, I learnt some more small things such as using pointers, better ways to render objects to the screen, 
+                                and how to display numerical text to the screen.
+                            </p>
+
+                            <div class="button-github">
+                                <a id="github-link" href="https://github.com/Leon-Lowe/TopDown-cpp">View Source Code</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="portfolio-image" src="../../Images/Portfolio/TopDown/top-down.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="main-container">
+            <div class="footer-wrapper">
+                <div class="contact-wrapper">
+                    <h2>Contact Me</h2>
+                    <p>Email - leonlowe0@outlook.com</p>
+                    <p>WhatsApp - +44 7395 822483</p>
+                </div>
+                <div class="contact-wrapper">
+                    <h2>Socials</h2>
+                    <div class="socials-wrapper">
+                        <a href="https://github.com/Leon-Lowe"><img id="social-image" src="../../Images/Github_logo.png"></a>
+                        <a href="https://www.linkedin.com/in/leonlowe"><img id="social-image" src="../../Images/LinkedIn_logo.png"></a>
+                        <a href="https://www.youtube.com/@lotutorials"><img id="social-image" src="../../Images/Youtube_logo.png"></a>
+                        <a href="https://twitter.com/Its_Just_Lowe"><img id="social-image" src="../../Images/Twitter_logo.png"></a>
+                        <a href="https://www.facebook.com/LeonLoweFreelancing"><img id="social-image" src="../../Images/Facebook_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

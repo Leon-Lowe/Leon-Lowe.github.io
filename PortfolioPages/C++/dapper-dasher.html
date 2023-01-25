@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leon Lowe</title>
+
+        <meta name="viewport", content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../../default.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Leon!</h1>
+                <div class="nav-wrapper">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../about.html">About</a>
+                    <a href="../../portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="s2">
+            <section class="s1">
+                <div class="main-container">
+                    <div class="portfolio-page-wrapper">
+                        <div class="portfolio-description">
+                            <h2>Dapper Dasher</h2>
+                            <p>A 2D sidescroller</p>
+                            <h3>Our Team</h3>
+                            <ul>
+                                <li>Leon Lowe (Me) - Programming</li>
+                            </ul>
+                            <h3>What I used in this project</h3>
+                            <ul>
+                                <li>Classes</li>
+                                <li>2D Mathematics</li>
+                                <li>2D Physics</li>
+                                <li>2D Collisions</li>
+                                <li>Raylib</li>
+                            </ul>
+                            <h3>My experience making this project</h3>
+                            <p>
+                                This game has a very simple premise: it was a side scroller where you had to jump over obstacles that came your way and get to the finish line.
+                            </p>
+                            <p>
+                                While this game is very simple, it was a brilliant next step as the complexity of the programming was brought up but not to the point where 
+                                I was lost. Learning about handling collision was made even simpler in this game where I was introduced 
+                                to the 'GetCollisionRecs()' function. This function took in two rectangles as parameters and checked to see if they were overlapping. This 
+                                function was used for both the player colliding with the nebulae and the player colliding with the finish line.
+                            </p>
+                            <p>
+                                The other main thing that I learnt about was handling physics and delta time. If the physics were frame 
+                                rate dependent then you can not guarantee that they would behave as expected. For example, if you want gravity to affect an object by one 
+                                unit each frame, but then the frame rate doubles for some reason, then gravity is now twice as strong. But making this work using delta 
+                                time fixes these issues. Now you can say that you want gravity to affect an object by one unit every second, and it will always affect 
+                                said object by the said amount each second.
+                            </p>
+
+                            <div class="button-github">
+                                <a id="github-link" href="https://github.com/Leon-Lowe/SideScroller-cpp">View source code</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="portfolio-image" src="../../Images/Portfolio/DapperDasher/dapper-dasher.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="main-container">
+            <div class="footer-wrapper">
+                <div class="contact-wrapper">
+                    <h2>Contact Me</h2>
+                    <p>Email - leonlowe0@outlook.com</p>
+                    <p>WhatsApp - +44 7395 822483</p>
+                </div>
+                <div class="contact-wrapper">
+                    <h2>Socials</h2>
+                    <div class="socials-wrapper">
+                        <a href="https://github.com/Leon-Lowe"><img id="social-image" src="../../Images/Github_logo.png"></a>
+                        <a href="https://www.linkedin.com/in/leonlowe"><img id="social-image" src="../../Images/LinkedIn_logo.png"></a>
+                        <a href="https://www.youtube.com/@lotutorials"><img id="social-image" src="../../Images/Youtube_logo.png"></a>
+                        <a href="https://twitter.com/Its_Just_Lowe"><img id="social-image" src="../../Images/Twitter_logo.png"></a>
+                        <a href="https://www.facebook.com/LeonLoweFreelancing"><img id="social-image" src="../../Images/Facebook_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

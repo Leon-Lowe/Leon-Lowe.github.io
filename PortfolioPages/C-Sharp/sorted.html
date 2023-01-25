@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leon Lowe</title>
+
+        <meta name="viewport", content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../../default.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Leon!</h1>
+                <div class="nav-wrapper">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../about.html">About</a>
+                    <a href="../../portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="s2">
+            <section class="s1">
+                <div class="main-container">
+                    <div class="portfolio-page-wrapper">
+                        <div class="portfolio-description">
+                            <h2>Sorted</h2>
+                            <p>A fast-paced sort-em-up puzzley/action game</p>
+                            <h3>Features</h3>
+                            <ul>
+                                <li>Fast paced environment - Sort the parcels as fast as you can, but remember to empty 
+                                    the parcel bins!
+                                </li>
+                                <li>Responsive Movement - In a fast paced game like this, you want the character to move as 
+                                    soon as you tell it to.
+                                </li>
+                            </ul>
+                            <h3>Our Team</h3>
+                            <ul>
+                                <li>Leon Lowe (Me) - Programming and Sound Effects</li>
+                                <li>John Burton (<a href="https://twitter.com/bathropson">@bathropson</a>) - Art and Animations </li>
+                            </ul>
+                            <h3>What I used in this project</h3>
+                            <ul>
+                                <li>Interfaces</li>
+                                <li>Inheritance</li>
+                                <li>2D Mathematics</li>
+                                <li>2D Physics</li>
+                                <li>Scriptable Objects</li>
+                            </ul>
+                            <h3>My experience making this project</h3>
+                            <p>
+                                As this game was made for a game jam, I didn't have much time to explore anything out of my comfort 
+                                zone. I did try to learn some new things in the unity physics package while I was creating this 
+                                though. I had to do this as I needed to find a way of deciding which object the player was trying to 
+                                interact with.
+                            </p>
+                            <p>
+                                To do this, I first had to cast an OverlapCircle on the player and then return all the 
+                                interactable objects that were within that circle. If the number of objects in the range was one, 
+                                I could just interact with that object. However, if there were two or more objects in range, I then 
+                                had to loop through them all and perform a raycast from the player to the current object being checked, 
+                                all while storing the distance of the current closest one. This is also how I learnt about a cool float 
+                                function called "float.maxValue".
+                            </p>
+
+                            <div class="button-itch">
+                                <a id="itch-link" href="https://dyludiumdigital.itch.io/sorted">Try on Itch.io</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="portfolio-image" src="../../Images/Portfolio/Sorted/SortedScreenshot_1.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/Sorted/SortedScreenshot_2.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/Sorted/SortedScreenshot_3.png">
+                            <img id="portfolio-image" src="../../Images/Portfolio/Sorted/SortedScreenshot_4.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="main-container">
+            <div class="footer-wrapper">
+                <div class="contact-wrapper">
+                    <h2>Contact Me</h2>
+                    <p>Email - leonlowe0@outlook.com</p>
+                    <p>WhatsApp - +44 7395 822483</p>
+                </div>
+                <div class="contact-wrapper">
+                    <h2>Socials</h2>
+                    <div class="socials-wrapper">
+                        <a href="https://github.com/Leon-Lowe"><img id="social-image" src="../../Images/Github_logo.png"></a>
+                        <a href="https://www.linkedin.com/in/leonlowe"><img id="social-image" src="../../Images/LinkedIn_logo.png"></a>
+                        <a href="https://www.youtube.com/@lotutorials"><img id="social-image" src="../../Images/Youtube_logo.png"></a>
+                        <a href="https://twitter.com/Its_Just_Lowe"><img id="social-image" src="../../Images/Twitter_logo.png"></a>
+                        <a href="https://www.facebook.com/LeonLoweFreelancing"><img id="social-image" src="../../Images/Facebook_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
